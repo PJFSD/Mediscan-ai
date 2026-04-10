@@ -1,0 +1,101 @@
+.alerts-container {
+  padding: 24px;
+  background: #f9fafb;
+  height: 100%;
+}
+
+.alerts-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.alerts-subtitle {
+  color: #6b7280;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* List */
+.alerts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Each alert */
+.alert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  transition: 0.2s ease;
+}
+
+.alert-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Left side */
+.alert-left {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+/* Dot indicators */
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+/* Colors */
+.dot.critical {
+  background-color: #ef4444;
+}
+
+.dot.abnormal {
+  background-color: #f59e0b;
+}
+
+.dot.borderline {
+  background-color: #fbbf24;
+}
+
+.dot.followup {
+  background-color: #3b82f6;
+}
+
+/* Text styles */
+.alert-title {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.alert-time {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.alert-sub {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* Button */
+.alert-action .btn {
+  background: transparent;
+  border: none;
+  color: #2563eb;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.alert-action .btn:hover {
+  text-decoration: underline;
+}
